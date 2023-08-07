@@ -1380,6 +1380,10 @@ img {
     display: none;
   }
 
+  .underline::after {
+    bottom: -26px;
+  }
+
   .header-social {
     gap: 40px;
   }
