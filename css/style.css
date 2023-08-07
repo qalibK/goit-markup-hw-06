@@ -140,7 +140,7 @@ img {
   text-transform: capitalize;
 }
 
-.mob-link:hover ,
+.mob-link:hover,
 .mob-link:focus {
   color: var(--iris-color);
 }
@@ -689,10 +689,11 @@ img {
 
 .filters-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 24px;
   margin-bottom: 48px;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 /** Cards **/
@@ -743,12 +744,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
+  justify-content: center;
   row-gap: 48px;
 }
 
 .cards-list-item {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
 }
 .box {
   position: relative;
@@ -1373,11 +1376,39 @@ img {
         url(../images/bg-tab-2x.jpg);
     }
   }
+
+  .cards-list {
+    gap: 72px 24px;
+    justify-content: flex-start;
+  }
+
+  .cards-list-item {
+    width: calc((100% - 24px) / 2);
+    display: inline-block;
+  }
+
+  .filters-list {
+    margin-bottom: 64px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .burger-btn {
     display: none;
+  }
+
+  .cards-list {
+    gap: 48px 24px;
+    justify-content: flex-start;
+  }
+
+  .cards-list-item {
+    width: auto;
+    display: flex;
+  }
+
+  .filters-list {
+    margin-bottom: 64px;
   }
 
   .underline::after {
